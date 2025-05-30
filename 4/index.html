@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Flashcard</title>
+</head>
+<body>
+     <img 
+    src="assets/img/Schweiz.jpg" 
+    alt="Bandeira da Suíça" 
+    id="imgSuica"
+    style="width:40px; height:auto; cursor:pointer; border-radius:5px; margin-right:1250px;"
+/>
+<audio id="somSuica" src="assets/img/twangy-boing.mp3"></audio><!--botao que emite som-->
+<h1 style="color: white; text-align: center;">Deutsch - Básico </h1>
+    <main>
+        div
+        <section id="container"><!-- dexei desorganizado pq sabia que eu tinha que fazer em js
+            ent fiz questao de deixar meio feio no site. --> 
+
+perguntas
+
+1. Como se diz “bom dia” em alemão?
+2. Como se diz “boa noite” em alemão?
+3. Como se diz “como vai?” em alemão?
+4. Como se diz o número 1 em alemão?
+5. Como se diz o número 2 em alemão?
+6. Como se diz “pão” em alemão?
+7. Como se diz “água” em alemão?
+8. Como se diz “desculpe” em alemão?
+9. Como se diz “eu não entendo” em alemão?
+10. Qual o artigo definido para palavras masculinas em alemão?
+11. Qual o artigo definido para palavras femininas em alemão?
+12. Qual o artigo definido para palavras neutras em alemão?
+
+respostas
+
+1. Bom dia em alemão é **Guten Morgen** (gú-ten mór-guen)
+2. Boa noite em alemão é **Gute Nacht** (gú-te nárrt)
+3. Como vai? em alemão é **Wie geht es dir?** (ví guêt es dîr?)
+4. O número 1 em alemão é **eins** (ains)
+5. O número 2 em alemão é **zwei** (tsvai)
+6. Pão em alemão é **Brot** (brot)
+7. Água em alemão é **Wasser** (vás-ser)
+8. Desculpe em alemão é **Entschuldigung** (ênt-shul-di-gung)
+9. Eu não entendo em alemão é **Ich verstehe nicht** (ísh fér-shtê-e nisht)
+10. Para palavras masculinas, usa-se **der** (dêr)
+11. Para palavras femininas, usa-se **die** (dí)
+12. Para palavras neutras, usa-se **das** (dás)
+        </section>
+    </main>
+    
+    <footer >
+        <p>© Alle Rechte vorbehalten von Schüler Juan Pepe Castro., sem fins lucrativos</p>
+    </footer> 
+<script>
+  const imagem = document.getElementById('imgSuica');
+  const som = document.getElementById('somSuica');
+  imagem.addEventListener('click', () => {
+    som.currentTime = 0;  
+    som.play();           
+  });
+</script>
+</body>
+</html>
