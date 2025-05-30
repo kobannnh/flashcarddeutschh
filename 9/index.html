@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Flashcard</title>
+</head>
+<body>
+     <img 
+    src="assets/img/Schweiz.jpg" 
+    alt="Bandeira da Suíça" 
+    id="imgSuica"
+    style="width:40px; height:auto; cursor:pointer; border-radius:5px; margin-right:1250px;"
+/>
+<audio id="somSuica" src="assets/img/twangy-boing.mp3"></audio>
+<audio id="somCartao" src="assets/img/classic_hurt.mp3"></audio>
+<h1 style="color: white; text-align: center;">Deutsch - Básico </h1>
+    <main>
+        <section id="container">
+        </section>
+    </main>
+    
+    <footer >
+        <p>© Alle Rechte vorbehalten von Schüler Juan Pepe Castro., sem fins lucrativos</p>
+    </footer> 
+
+
+<script>
+  const imagem = document.getElementById('imgSuica');
+  const som = document.getElementById('somSuica');
+  imagem.addEventListener('click', () => {
+    som.currentTime = 0;  
+    som.play();           
+  });
+</script>
+
+    <script src="app.js"></script>
+    <script src="perguntas.js"></script>
+</body>
+</html>
